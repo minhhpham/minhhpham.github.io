@@ -1,116 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/gdpr/gdprscript.js?buildTime=1234&hasRemindMe=true"></script>
-	<title>Contact - MINH PHAM</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<!-- stylesheet --> 
-	<link rel="stylesheet" type="text/css" href="files/main_style.css?1529643614" title="wsite-theme-css" />
-	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
-	<link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
-	<link href='http://fonts.googleapis.com/css?family=Lato:400,300,300italic,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
-
-
-	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
-	<script type="text/javascript" src="https://dixietemplatecom.ipage.com/snow-effect/assets/boo-snow.php?u=118740971&s=318829976250927001"></script>
+<head>
+    <title>Minh Pham</title>
+    <link rel="stylesheet" type="text/css" href="files/main_style.css">
+    <link rel="stylesheet" type="text/css" href="files/dna.css">
 </head>
 
-<body class="no-header-page  wsite-page-contact  full-width-on  wsite-theme-dark"><div class="body-wrap">
-	<div class="wrapper">
-		<div id="header-wrap">
-			<label for="nav-trigger" class="nav-trigger hamburger">
-				<span class="open-btn">
-					<span class="mobile"></span>
-					<span class="mobile"></span>
-					<span class="mobile"></span>
-				</span>
-			</label>
-			<div id="logo"><span class="wsite-logo">
-				<a href=""> <span id="wsite-title">MINH PHAM</span></a>
-			</span></div>
-			<div id="nav">
-					<div class="container">
-						<ul class="wsite-menu-default">
-							<li class="wsite-menu-item-wrap"> <a href="index.html" class="wsite-menu-item" > Home </a> </li>
-							<li class="wsite-menu-item-wrap"> <a href="projects.html" class="wsite-menu-item" > Projects </a> </li>
-							<li class="wsite-menu-item-wrap"> <a href="CV.html" class="wsite-menu-item" > CV </a> </li>							
-							<li class="wsite-menu-item-wrap"> <a href="publications.html" class="wsite-menu-item" > Publications </a> </li>							
-							<li class="wsite-menu-item-wrap"> <a href="https://github.com/minhhpham" class="wsite-menu-item" > Github </a></li>
-							<li id="active" class="wsite-menu-item-wrap"> <a href="contact.html" class="wsite-menu-item" > Contact </a> </li>
-						</ul>
-					</div>
-			</div>
-	    </div><!-- end header-wrap -->
+<body>
+    <!-- NAV BAR -->
+    <div id="cssmenu" class="align-center">
+    <ul>
+       <li>                 <a href='index.html'>Home</a></li>
+       <li>                 <a href='CV.html'>Curriculum Vitae</a></li>
+       <li>                 <a href='publications.html'>Publications</a></li>
+       <li>                 <a href='bookshelf.html'>Bookshelf</a></li>
+       <li>                 <a href='music.html'>Music</a></li>
+       <li>                 <a href='projects.html'>Fun Projects</a></li>
+       <li>                 <a href='presentations.html'>Presentations</a></li>
+       <li class="active">  <a href='contact.html'>Contact</a></li>
+    </ul>
+    </div>
+    <!-- NAV BAR ENDS -->
+    <article class="markdown-body">
+        <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScTyKr2p809dj0mKGJ12-kNldjEdpFHpiQm0LBMJjJyltxM8A/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+            <table style="width:70%;margin-left:15%;margin-right:15%;">
+                <tr>
+                    <th>First name:</th>
+                    <td><input aria-required="true" type="text" name="entry.1037465018" /></td>
+                </tr>
+                
+                <tr>
+                    <th>Last name:</th>
+                    <td><input aria-required="true" type="text" name="entry.441259662" /></td>
+                </tr>
 
-	    <div id="main-wrap">
-	    	<div id="wsite-content" class="wsite-elements wsite-not-footer">
-				<div class="wsite-section-wrap">
-					<div class="wsite-section wsite-body-section wsite-background-5"  >
-						<div class="wsite-section-content">
-							<div class="container">
-								<div class="wsite-section-elements">
-									<div>
-										<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScTyKr2p809dj0mKGJ12-kNldjEdpFHpiQm0LBMJjJyltxM8A/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-											<h4>First name:</h4><br>
-											<input aria-required="true" id="entry.1037465018" class="wsite-form-input wsite-input" type="text" name="entry.1037465018" />
+                <tr>
+                    <th>Email:</th>
+                    <td>
+                        <input aria-required="true" type="email" name="entry.1825126775" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Comment</th>
+                    <td>
+                      <textarea aria-required="true" name="entry.1916895157" style="height: 200px; width: 400px;"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <p align="center"><input type="submit" class="SubmitButton" value="Submit"></p>
+        </form>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 
-											<!--<input type="text" name="entry.1037465018" id="entry.1037465018"><br>-->
-											<br><br><h4>Last name:</h4><br>
-											<input aria-required="true" id="entry.441259662" class="wsite-form-input wsite-input" type="text" name="entry.441259662" />
-											<!--<input type="text" name="entry.441259662" id="entry.441259662"><br>-->
-											<br><br><h4>Email:</h4><br>
-											<div class="wsite-form-input-container">
-												<input aria-required="true" id="entry.1825126775" class="wsite-form-input wsite-input wsite-input-width-370px" type="email" name="entry.1825126775" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required />
-											</div>
-											<!--<input type="emailExists" name="entry.1825126775" id="entry.1825126775"><br>-->
-											<br><h4>Comment</h4><br>
-											<div class="wsite-form-input-container">
-												<textarea aria-required="true" id="entry.1916895157" class="wsite-form-input wsite-input wsite-input-width-370px" name="entry.1916895157" style="height: 200px"></textarea>
-											</div>
-											<!--<input type="text" name="entry.1916895157" id="entry.1916895157"><br>-->
-											<input type="submit" value="Submit">
-										</form>
-										<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-				
-										<script src="assets/js/jquery.min.js"></script>
-										<script type="text/javascript">var submitted=false;</script>
-										<script type="text/javascript">
-											$('#gform').on('submit', function(e) {
-											  $('#gform *').fadeOut(1000);
-											  $('#gform').prepend('Thank you! I will get to you shortly.');
-											  });
-										</script>
-										<div id="g-recaptcha-473116473851806641" class="recaptcha" data-size="invisible" data-recaptcha="0" data-sitekey="6Ldf5h8UAAAAAJFJhN6x2OfZqBvANPQcnPa8eb1C"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-	    </div><!-- end main-wrap -->
-	</div><!--/.wrapper-->
+            <script src="files/jquery-3.4.1.min.js"></script>
+            <script type="text/javascript">var submitted=false;</script>
+            <script type="text/javascript">
+                $('#gform').on('submit', function(e) {
+                  $('#gform *').fadeOut(1000);
+                  $('#gform').prepend('<br><p align="center">Thank you! I will get to you shortly.</p>');
+                  });
+            </script>
+        
 
-   <div class="mobile-wrap">
-	   	<div id="navmobile" class="nav"><ul class="wsite-menu-default">
-			<li id="pg429470042227791537" class="wsite-menu-item-wrap"><a href="index.html" class="wsite-menu-item" > Home </a> </li>
-			<li id="pg290578726809470131" class="wsite-menu-item-wrap"><a href="projects.html" class="wsite-menu-item">Projects</a></li>
-			<li class="wsite-menu-item-wrap"> <a href="publications.html" class="wsite-menu-item" > Publications </a> </li>							
-			<li id="pg619877481258777962" class="wsite-menu-item-wrap"><a href="books-read.html" class="wsite-menu-item">Books read</a></li>
-			<li id="pg233911600829399067" class="wsite-menu-item-wrap"><a href="gallery.html" class="wsite-menu-item">Gallery</a></li>
-			<li id="active" class="wsite-menu-item-wrap"><a href="contact.html" class="wsite-menu-item">Contact</a>	</li>
-		</ul></div>
-   </div>
-</div>
+    </article>
 
-	<script type="text/javascript" src="files/theme/plugin.js"></script>
-	<script type="text/javascript" src="files/theme/mobile.js"></script>
-	<script type="text/javascript" src="files/theme/custom.js"></script>
-
-    <div id="customer-accounts-app"></div>
-    <script src="https://cdn2.editmysite.com/js/site/main-customer-accounts-site.js?buildTime=1234"></script>
-
-		
-	</body>
+    
+    </body>
 </html>

@@ -1,0 +1,113 @@
+@keyframes molecule-animation {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(180px, 0, 0);
+  }
+}
+@keyframes connection-animation {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  to {
+    transform: scale3d(0, 1, 1);
+  }
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+article.DNA {
+  flex: 1;
+  display: flex;
+  width: 100vw;
+  max-height: 120px;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transform: rotate(90deg) scale(0.5);
+}
+dna {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 200px;
+  position: relative;
+}
+dna:nth-child(even) {
+  transform: scaleX(-1);
+}
+column {
+  display: flex;
+  flex-flow: column;
+}
+column:nth-of-type(3) {
+  position: absolute;
+  left: 0;
+}
+dot {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  animation-name: molecule-animation;
+  animation-duration: 1500ms;
+  font-size: 20px;
+}
+column:nth-of-type(1) dot {
+  animation-direction: alternate, normal;
+}
+column:nth-of-type(3) dot {
+  animation-direction: alternate-reverse, normal;
+}
+dash {
+  display: block;
+  height: 6.6666666667px;
+  width: 140px;
+  margin-top: 6.6666666667px;
+  margin-bottom: 26.6666666667px;
+  margin-left: 10px;
+  border-radius: 3.3333333333px;
+  background-color: silver;
+  animation-name: connection-animation;
+  animation-duration: 750ms;
+  animation-direction: alternate;
+}
+dot, dash {
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+dot:nth-of-type(1), dash:nth-of-type(1) {
+  animation-delayay: -150ms;
+}
+dot:nth-of-type(2), dash:nth-of-type(2) {
+  animation-delay: -300ms;
+}
+dot:nth-of-type(3), dash:nth-of-type(3) {
+  animation-delay: -450ms;
+}
+dot:nth-of-type(4), dash:nth-of-type(4) {
+  animation-delay: -600ms;
+}
+dot:nth-of-type(5), dash:nth-of-type(5) {
+  animation-delay: -750ms;
+}
+dot:nth-of-type(6), dash:nth-of-type(6) {
+  animation-delay: -900ms;
+}
+dot:nth-of-type(7), dash:nth-of-type(7) {
+  animation-delay: -1050ms;
+}
+dot:nth-of-type(8), dash:nth-of-type(8) {
+  animation-delay: -1200ms;
+}
+dot:nth-of-type(9), dash:nth-of-type(9) {
+  animation-delay: -1350ms;
+}
+dot:nth-of-type(10), dash:nth-of-type(10) {
+  animation-delay: -1500ms;
+}
