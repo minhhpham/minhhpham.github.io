@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Minh Pham</title>
+    <link rel="stylesheet" type="text/css" href="files/main_style.css">
+    <link rel="stylesheet" type="text/css" href="files/dna.css">
+</head>
+
+<body>
+	<!-- NAV BAR -->
+    <div id="cssmenu" class="align-center">
+    <ul>
+       <li>                 <a href='index.html'>Home</a></li>
+       <li>                 <a href='CV.html'>Curriculum Vitae</a></li>
+       <li>                 <a href='publications.html'>Publications</a></li>
+       <li class="active">  <a href='software.html'>Software</a></li>
+       <li>                 <a href='bookshelf.html'>Bookshelf</a></li>
+       <li>                 <a href='music.html'>Music</a></li>
+       <li>                 <a href='talks.html'>Talks</a></li>
+       <li>                 <a href='contact.html'>Contact</a></li>
+    </ul>
+    </div>
+    <!-- NAV BAR ENDS -->
+    <article class="markdown-body">
+    	<br>
+      <table>
+        <col width="20%"><col width="50%"><col width="15%"><col width="15%">
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Source Code</th>
+          <th>Deployed Product</th>
+        </tr>
+        <tr>
+          <td valign="top" align="center">BWA in GPGPU</td>
+          <td>A CUDA implementation of the Burrows-Wheeler Aligner algorithm, for  <a href="https://en.wikibooks.org/wiki/Next_Generation_Sequencing_(NGS)/Alignment" target="_blank">aligning NGS short reads</a> to a reference genome/protein. (under development)</td>
+          <td valign="top" align="center"><a href="https://github.com/minhhpham/bwa" target="_blank">GitHub</a></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td valign="top" align="center">Pharmacovigilance Algorithms</td>
+          <td>Implementation of MCEM and RGPS algorithms, for mining Drug-Adverse Event associations from database.</td>
+          <td valign="top" align="center"><a href="https://github.com/minhhpham/MultiPharma" target="_blank">GitHub</a></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td align="center">WasteWater Web Server</td>
+          <td>A web user-interface for an algorithm to optimize water reclamation/reuse. Built from scratch.</td>
+          <td valign="top" align="center"><a href="https://github.com/minhhpham/MASS-webserver" target="_blank">GitHub</a></td>
+          <td valign="top" align="center"><a href="http://wastewater.csee.usf.edu/" target="_blank">Link</a></td>
+        </tr>
+        <tr>
+          <td valign="top" align="center">Predicting Approval Chance for Credit Card Applications</td>
+          <td>This app uses data collected on Reddit to estimate your chance of credit card approval using statistical & machine learning models. This app got top of a subReddit with > 200k followers for 2 weeks.</td>
+          <td valign="top" align="center"><a href="https://github.com/minhhpham/credit-cards" target="_blank">GitHub</a></td>
+          <td valign="top" align="center"><a href="credit-cards.html" target="_blank">Link</a></td>
+        </tr>
+        <tr>
+          <td valign="top" align="center">Maximum Likelihood Estimation for the Generalized Pareto Distribution</td>
+          <td valign="top" >Maximum Likelihood Estimation with Censored Data for the Generalized Pareto Distribution</td>
+          <td valign="top" align="center"><a href="https://github.com/minhhpham/gpd" target="_blank">GitHub</a></td>
+          <td></td>
+        </tr>
+      </table>
+
+
+    <!-- sticky navbar -->
+    <script type="text/javascript">
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
+        // Get the navbar
+        var navbar = document.getElementById("cssmenu");
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+
+    </script>
+
+</body>
+</html>
